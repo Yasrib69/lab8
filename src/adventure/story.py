@@ -82,7 +82,7 @@ def main() -> None:
 
     while True:
         # Keep the original prompt text exactly to preserve behavior/tests.
-        choice = Prompt.ask("Which direction do you choose? (left/right/exit): ").strip().lower()
+        choice = Prompt.ask("[bold]Which direction do you choose? (left/right/exit): [/bold]").strip().lower()
         if choice == "exit":
             break
 
